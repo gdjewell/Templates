@@ -1,23 +1,18 @@
 {
-  "providerId": "leadpages.net",
+  "providerId": "leadpages.com",
   "providerName": "Leadpages Test",
-  "serviceId": "custom-domain-apex-test",
+  "serviceId": "custom-domain-test",
   "serviceName": "Leadpages Custom Domain (Test)",
-  "version": 2,
+  "version": 3,
   "logoUrl": "https://my.leadpagestest.net/static/current/img/logos/logo_icon.svg",
   "description": "Enables a domain to work with Leadpages",
-  "syncRedirectDomain": "my.leadpagestest.net, my.leadpagestest.com",
-  "hostRequired": false,
+  "syncRedirectDomain": "my.leadpagestest.com",
+  "variableDescription": "HOST: The subdomain for the domain.",
+  "hostRequired": true,
   "records": [
     {
-      "type": "A",
-      "host": "@",
-      "pointsTo": "35.192.151.53",
-      "ttl": 600
-    },
-    {
       "type": "CNAME",
-      "host": "www",
+      "host": "@",
       "pointsTo": "custom-proxy.leadpagestest.net",
       "ttl": 600
     }
